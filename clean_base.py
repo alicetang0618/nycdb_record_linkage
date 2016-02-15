@@ -2,7 +2,7 @@ from corp_match import *
 
 if __name__ == "__main__":
 
-	## 7362 rows
+    ## 7362 rows
     base_df = pd.read_csv("base.csv")
     base_df['clean_name'] = base_df['name'].apply(standardize_string)
     base_df['name_length'] = base_df['name'].apply(lambda x: len(x))
